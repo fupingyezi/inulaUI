@@ -1,4 +1,4 @@
-import { h, Fragment, useState } from 'openinula';
+import { h, Fragment } from '@openinula/next';
 import { Button } from 'inulaUI';
 
 export default function ButtonDemo() {
@@ -13,3 +13,14 @@ export default function ButtonDemo() {
     </div>
   );
 } 
+
+// export default function Counter() {
+//   let count = 0;  // 直接声明状态
+  
+//   return (
+//     <div>
+//       <p>计数: {count}</p>
+//       <Button onClick={() => count++}>增加</Button>
+//     </div>
+//   );
+// }

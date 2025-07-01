@@ -20,10 +20,14 @@
   border-color: #1677ff;
   color: #fff;
 }
-.inula-btn-primary:hover,
-.inula-btn-primary:focus {
+.inula-btn-primary:hover {
   background: #4096ff;
   border-color: #4096ff;
+  color: #fff;
+}
+.inula-btn-primary:active {
+  background: #0958d9;
+  border-color: #0958d9;
   color: #fff;
 }
 
@@ -33,11 +37,15 @@
   border-color: #d9d9d9;
   color: #333;
 }
-.inula-btn-default:hover,
-.inula-btn-default:focus {
+.inula-btn-default:hover {
   color: #1677ff;
   border-color: #1677ff;
   background: #f0f7ff;
+}
+.inula-btn-default:active {
+  background: #e6f4ff;
+  border-color: #1677ff;
+  color: #1677ff;
 }
 
 /* 虚线按钮 */
@@ -47,11 +55,15 @@
   border-color: #d9d9d9;
   color: #333;
 }
-.inula-btn-dashed:hover,
-.inula-btn-dashed:focus {
+.inula-btn-dashed:hover {
   color: #1677ff;
   border-color: #1677ff;
   background: #f0f7ff;
+}
+.inula-btn-dashed:active {
+  background: #e6f4ff;
+  border-color: #1677ff;
+  color: #1677ff;
 }
 
 /* 文本按钮 */
@@ -61,9 +73,12 @@
   color: #1677ff;
   box-shadow: none;
 }
-.inula-btn-text:hover,
-.inula-btn-text:focus {
+.inula-btn-text:hover {
   background: #e6f4ff;
+  color: #0958d9;
+}
+.inula-btn-text:active {
+  background: #bae0ff;
   color: #0958d9;
 }
 
@@ -75,11 +90,14 @@
   text-decoration: underline;
   box-shadow: none;
 }
-.inula-btn-link:hover,
-.inula-btn-link:focus {
+.inula-btn-link:hover {
   color: #0958d9;
   background: none;
   text-decoration: underline;
+}
+.inula-btn-link:active {
+  color: #0958d9;
+  background: none;
 }
 
 /* 危险按钮 */
@@ -88,8 +106,7 @@
   border-color: #ff4d4f;
   background: #fff1f0;
 }
-.inula-btn-danger:hover,
-.inula-btn-danger:focus {
+.inula-btn-danger:hover {
   color: #fff;
   background: #ff4d4f;
   border-color: #ff4d4f;
@@ -99,8 +116,12 @@
   color: #fff;
   border-color: #ff4d4f;
 }
-.inula-btn-primary.inula-btn-danger:hover,
-.inula-btn-primary.inula-btn-danger:focus {
+.inula-btn-primary.inula-btn-danger:hover {
+  background: #d9363e;
+  border-color: #d9363e;
+  color: #fff;
+}
+.inula-btn-primary.inula-btn-danger:active {
   background: #d9363e;
   border-color: #d9363e;
   color: #fff;
@@ -120,11 +141,15 @@
   border-color: #1677ff;
   background: transparent;
 }
-.inula-btn-primary.inula-btn-ghost:hover,
-.inula-btn-primary.inula-btn-ghost:focus {
+.inula-btn-primary.inula-btn-ghost:hover {
   color: #4096ff;
   border-color: #4096ff;
   background: rgba(22, 119, 255, 0.08);
+}
+.inula-btn-primary.inula-btn-ghost:active {
+  color: #4096ff;
+  border-color: #4096ff;
+  background: rgba(22, 119, 255, 0.16);
 }
 
 /* 幽灵危险按钮 */
@@ -135,10 +160,13 @@
   background: transparent;
 }
 .inula-btn-danger.inula-btn-ghost:hover,
-.inula-btn-primary.inula-btn-danger.inula-btn-ghost:hover,
-.inula-btn-danger.inula-btn-ghost:focus,
-.inula-btn-primary.inula-btn-danger.inula-btn-ghost:focus {
+.inula-btn-primary.inula-btn-danger.inula-btn-ghost:hover {
   color: #fff;
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+}
+.inula-btn-danger.inula-btn-ghost:active {
+  color: #ff4d4f;
   background: #ff4d4f;
   border-color: #ff4d4f;
 }
@@ -149,18 +177,30 @@
   border-color: #1677ff;
   background: transparent;
 }
-.inula-btn-default.inula-btn-ghost:hover,
-.inula-btn-default.inula-btn-ghost:focus {
+.inula-btn-default.inula-btn-ghost:hover {
   color: #4096ff;
   border-color: #4096ff;
   background: rgba(22, 119, 255, 0.08);
 }
+.inula-btn-default.inula-btn-ghost:active {
+  color: #4096ff;
+  border-color: #4096ff;
+  background: rgba(22, 119, 255, 0.16);
+}
 
 /* 禁用 */
 .inula-btn-disabled,
-.inula-btn:disabled {
+.inula-btn:disabled,
+.inula-btn-disabled:hover,
+.inula-btn:disabled:hover,
+.inula-btn-disabled:active,
+.inula-btn:disabled:active {
   cursor: not-allowed;
   opacity: 0.5;
+  background: #fff !important;
+  color: #333 !important;
+  border-color: #d9d9d9 !important;
+  box-shadow: none !important;
 }
 
 /* 加载中 */

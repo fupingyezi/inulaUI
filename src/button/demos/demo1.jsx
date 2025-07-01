@@ -1,4 +1,4 @@
-import { h, Fragment } from 'openinula';
+import { h, Fragment } from '@openinula/next';
 import Button from '../index.jsx';
 
 export default function ButtonDemo() {

@@ -63,8 +63,7 @@
     "prettier-plugin-organize-imports": "^3.0.0",
     "prettier-plugin-packagejson": "^2.2.18",
     "stylelint": "^14.9.1",
-    "@openinula/next": "^0.0.5",
-    "openinula": "^1.0.0-alpha"
+    "@openinula/next": "^0.0.5"
   },
   "dependencies": {
     "pnpm": "^10.12.4"
